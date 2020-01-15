@@ -1,11 +1,11 @@
 package com.example.prisoner.players;
 
 public interface Player {
-    Score getScore();
+    int getScore();
 
     Move nextMove();
 
-    void receiveOpponentMove();
+    void receiveOpponentMove(Move move);
 
     void addScore(Score score);
 
