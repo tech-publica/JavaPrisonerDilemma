@@ -49,4 +49,21 @@ public class RankedPlayer implements Player{
         }
         return message;
     }
+    
+    public RankedPlayer deepClone() {
+    	
+    	{
+    		try
+    		{
+    			return new RankedPlayer(player.getClass().newInstance());
+    		} catch (InstantiationException e)
+    		{
+    			throw new RuntimeException(e);
+    		} catch (IllegalAccessException e)
+    		{
+    			throw new RuntimeException(e);
+    		}
+    	
+    }
+    }
 }
