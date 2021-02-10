@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Evolution {
 	private Tournament tour = new Tournament();
-	public final int GENERATION_NUMBER = 2;
+	public final int GENERATION_NUMBER = 100;
 	public final int NUMBER_OF_CHANGES =  tour.getPlayers().size() / 5 > 0 ? tour.getPlayers().size() / 5 : 1;
 
 	public void evolve() { 

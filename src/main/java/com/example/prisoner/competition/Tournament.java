@@ -15,15 +15,9 @@ public class Tournament {
         for (int i = 0; i < NUM_INITIAL_CLONES; i++) {
             players.add(new RankedPlayer(new BastardInside()));
             players.add(new RankedPlayer(new DummyPlayer()));
-            players.add(new RankedPlayer(new KillerWhale()));
-            players.add(new RankedPlayer(new PlayerSimone()));
-            players.add(new RankedPlayer(new Giovanni()));
+
             players.add(new RankedPlayer(new Tit4Tat()));
-            players.add(new RankedPlayer(new Eitelplayer()));
-             players.add(new RankedPlayer(new Timidplayer()));
-            players.add(new RankedPlayer(new Alberto()));
-            players.add(new RankedPlayer(new PlayerA()));
-            players.add(new RankedPlayer(new DavidePlayer()));
+
  
         }
     }
