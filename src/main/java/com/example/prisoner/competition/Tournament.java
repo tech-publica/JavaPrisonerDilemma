@@ -7,7 +7,7 @@ import java.util.List;
 
 public class Tournament {
     private List<RankedPlayer> players;
-    private static final int NUM_INITIAL_CLONES = 5;
+    private static final int NUM_INITIAL_CLONES = 6;
     private static final int NUM_MATCHES = 100;
 
     public Tournament() {
@@ -15,7 +15,18 @@ public class Tournament {
         for (int i = 0; i < NUM_INITIAL_CLONES; i++) {
             players.add(new RankedPlayer(new BastardInside()));
             players.add(new RankedPlayer(new DummyPlayer()));
-
+            players.add(new RankedPlayer(new AndreaBastardPlayer()));
+            players.add(new RankedPlayer(new BlondeBlood()));
+            players.add(new RankedPlayer(new Danilo()));
+            players.add(new RankedPlayer(new DrJekyll()));
+            players.add(new RankedPlayer(new FrustratedWithHumanityPlayer()));
+            players.add(new RankedPlayer(new JackNonMiAvreteMai()));
+            players.add(new RankedPlayer(new Kupang()));
+            players.add(new RankedPlayer(new Michele()));
+            players.add(new RankedPlayer(new MirrorPlayer()));
+            players.add(new RankedPlayer(new MyPlayer()));
+            players.add(new RankedPlayer(new Putin()));
+            players.add(new RankedPlayer(new RoccoPlayer()));
             players.add(new RankedPlayer(new Tit4Tat()));
 
  
